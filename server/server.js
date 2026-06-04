@@ -4,7 +4,7 @@ const cors = require("cors");
 const ticketRoutes = require("./routes/ticket.route");
 
 const connectDB = require("./config/db");
-// Connect Database
+// Connect Database to server
 connectDB();
 
 const app = express();
