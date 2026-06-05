@@ -1,0 +1,25 @@
+import axios from "axios";
+
+const API = axios.create({
+  baseURL: "http://localhost:5000/api",
+});
+
+export const getTickets = (params) =>
+  API.get("/tickets", { params });
+
+export const getTicketById = (ticketId) =>
+  API.get(`/tickets/${ticketId}`);
+
+export const createTicket = (ticketData) =>
+  API.post("/tickets", ticketData);
+
+export const updateTicket = (
+  ticketId,
+  updateData
+) =>
+  API.put(
+    `/tickets/${ticketId}`,
+    updateData
+  );
+
+export default API;
