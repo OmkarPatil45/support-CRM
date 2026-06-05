@@ -17,7 +17,7 @@ const Navbar = () => {
         </h1>
 
         <div className="flex items-center gap-6">
-          <Link to="/" className="text-slate-600 hover:text-blue-600">
+          <Link to="/dashboard" className="text-slate-600 hover:text-blue-600">
             Dashboard
           </Link>
 
