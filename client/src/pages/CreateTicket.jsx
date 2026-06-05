@@ -33,7 +33,7 @@ const CreateTicket = () => {
 
       alert("Ticket Created Successfully");
 
-      navigate("/");
+      navigate("/dashboard");
     } catch (error) {
       console.error(error);
 
