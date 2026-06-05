@@ -18,7 +18,7 @@ const Login = () => {
       credentials.username === "admin" &&
       credentials.password === "admin123"
     ) {
-      navigate("/");
+      navigate("/dashboard");
     } else {
       setError("Invalid Credentials");
     }
